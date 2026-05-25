@@ -4,6 +4,7 @@ import { drizzleAdapter } from "@better-auth/drizzle-adapter";
 import { db } from '@/db'
 
 export const auth = betterAuth({
+  trustedOrigins: ["*"],
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
