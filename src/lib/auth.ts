@@ -4,7 +4,7 @@ import { drizzleAdapter } from "@better-auth/drizzle-adapter";
 import { db } from '@/db'
 
 export const auth = betterAuth({
-  trustedOrigins: ["*"],
+  trustedOrigins: ["https://papaya-dragon-6d5ac1.netlify.app"],
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
